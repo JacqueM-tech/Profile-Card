@@ -1,8 +1,5 @@
 /* VARIABLES */
 :root {
-    font-size: 16px;
-    background-color: var(--primary-dark-cyan);
-    line-height: 1.5rem;
     --neutral-dark-gray: hsl(0, 0%, 59%);
     --neutral-light-gray: hsl(225, 10%, 92%);
     --primary-dark-blue: hsl(229, 23%, 23%);
@@ -18,16 +15,17 @@
 
 /* BASE STYLES */
 
-/*body {
-    font-weight: 700;
+body {
+    font-size: 16px;
+    line-height: 1.5rem;
     font-family: 'Kumbh Sans', sans-serif;
-    background: url(../images/bg-pattern-top.svg) left -2% top 700% no-repeat, url(../images/bg-pattern-bottom.svg) right -20% bottom 750% no-repeat;
-}*/
+    background-color: var(--primary-dark-cyan);
+    background-image: url(../images/bg-pattern-top.svg),   url(../images/bg-pattern-bottom.svg);
+    background-position: left -2% top 650%, right -12% bottom 700%;
+    background-repeat: no-repeat;
+}
 
 /* MAIN */
-ul {
-    list-style: none;
-}
 
 .container {
     display: flex;
@@ -35,30 +33,21 @@ ul {
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
 
-.circle-top img {
-    position: absolute;
-    top: -35%;
-    left: -10%;
-}
-
-
-.card .card-top {
+.card-top {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
     position: relative;
     margin: 0 auto;
-    
 }
 
 .card-top img {
     display: flex;
     margin-top: 15rem;
-    width: 400px;
+    width: 30rem;
     border-radius: 6% 6% 0 0;
 }
 
@@ -68,16 +57,18 @@ ul {
     height: 125px;
     width: 125px;
     border-radius: 50%;
-    margin: -4rem 8rem ;
+    margin: -4rem 10rem ;
 }
 
 h1 {
     margin-top: 5rem;
     text-align: center;
 }
+
 h1 span {
     color: hsl(0, 0%, 59%);
 }
+
 h3 {
     margin-top: 1.5rem;
     text-align: center;
@@ -87,8 +78,9 @@ h3 {
 .card-bottom {
     background-color: white;
     border-radius: 0 0 5% 5%;
-    width: 400px;
+    width: 30rem;
 }
+
 .stats {
     display: flex;
     flex-flow: row wrap;
@@ -103,18 +95,10 @@ h3 {
     margin-left: 2rem;
 }
 
-.circle-bottom {
-    position: absolute;
-    top: 35%;
-    right: -90%;
-  
-    
-}
-
 
 /************ FOOTER ************/
 footer {
-    margin-top: 10rem;
+    margin-top: 12rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -122,7 +106,7 @@ footer {
 
 footer .attribution {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .attribution a {
