@@ -19,7 +19,7 @@ body {
     font-family: 'Kumbh Sans', sans-serif;
     background-color: var(--primary-dark-cyan);
     background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-    background-position: left 122% top 200%, right 120% bottom 220%;
+    background-position: left 125% top 220%, right 120% bottom 235%;
     background-repeat: no-repeat;
 }
 /************ MOBILE STYLES ************/
@@ -29,14 +29,13 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    width: 90%;
+    width: 100%;
 }
 .card-top {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin: 0 auto;
 }
 .card-top img {
@@ -84,7 +83,7 @@ h3 {
 
 /************ FOOTER ************/
     footer {
-        margin-top: 6rem;
+        margin-top: 8rem;
         text-align: center;
         font-size: .75rem;
     }
@@ -92,7 +91,7 @@ h3 {
 /*********** TABLET STYLES **********/
 @media only screen and (min-width: 768px) {
     body {
-        background-position: left 265% top 220%, right 275% bottom 270%;
+        background-position: left 285% top 290%, right 255% bottom 320%;
     }
     .card-top img {
         width: 30rem;
@@ -114,14 +113,15 @@ h3 {
 /************* LAPTOP STYLES **************/
 @media only screen and (min-width: 1024px) {
     body {
-        background-position: left -750% top 300%, right -750% bottom 300%;
+        background-position: left -850% top 300%, right -750% bottom 350%;
        }
 }
 
 /*********** DESKTOP STYLES ***********/
 @media only screen and (min-width: 1440px) {
     body {
-        background-position: left -50% top 250%, right -50% bottom 280%;
+        background-position: left -65% top 270%, right -50% bottom 350%;
+        width: 100%;
        }
-
-}
+       
+ }
